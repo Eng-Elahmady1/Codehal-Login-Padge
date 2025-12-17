@@ -13,16 +13,45 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header class="p-6 fixed top-0 left-0 w-full z-50">
+  <body
+    class="bg-[url(./photo-1568142402902-1298fe147da9.avif)] bg-cover bg-center flex items-center flex-col justify-between h-screen overflow-x-hidden relative"
+  >
+    <!-- <div class="blur-[5px] h-screen w-full"></div> -->
+
+    <header class="p-6 w-full z-50">
       <div class="container mx-auto">
         <div class="flex items-center justify-between">
           <div class="l-side">
             <ul class="flex items-center gap-8 text-white font-medium">
-              <li><a class="relative" href="#">Home</a></li>
-              <li><a class="relative" href="#">About</a></li>
-              <li><a class="relative" href="#">Services</a></li>
-              <li><a class="relative" href="#">Contact</a></li>
+              <li>
+                <a
+                  class="relative before:content-[''] before:absolute before:left-0 before:right-0 before:mx-auto before:-bottom-[10px] before:h-1 before:w-0 before:bg-white before:transition-all before:duration-700 before:ease-in-out hover:before:w-full"
+                  href="#"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  class="relative before:content-[''] before:absolute before:left-0 before:right-0 before:mx-auto before:-bottom-[10px] before:h-1 before:w-0 before:bg-white before:transition-all before:duration-700 before:ease-in-out hover:before:w-full"
+                  href="#"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative before:content-[''] before:absolute before:left-0 before:right-0 before:mx-auto before:-bottom-[10px] before:h-1 before:w-0 before:bg-white before:transition-all before:duration-700 before:ease-in-out hover:before:w-full"
+                  href="#"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative before:content-[''] before:absolute before:left-0 before:right-0 before:mx-auto before:-bottom-[10px] before:h-1 before:w-0 before:bg-white before:transition-all before:duration-700 before:ease-in-out hover:before:w-full"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div
@@ -41,81 +70,236 @@
       </div>
     </header>
 
-    <div class="background bg-[url(./photo-1568142402902-1298fe147da9.avif)] bg-cover bg-center blur-[5px] h-screen w-full"></div>
-    <div class="container">
-        <div class="bg-[url(./photo-1568142402902-1298fe147da9.avif)] bg-cover bg-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  mt-4 w-[80%] h-[600px] rounded-[5px]">
-            <div class="content w-[60%] h-[100%] absolute left-0 top-0 flex justify-between flex-col text-white p-[80px]">
-                <div class="logo">
-                    <h2 class="text-[30px]"><i class="fa-solid fa-fire mr-2"></i>Codehal</h2>
-                </div>
-                <div class="text">
-                    <h1 class="text-[40px] leading-[1]">Welcome! <br><span class="text-[25px]">To Our New Website.</span></h1>
-                    <p class="my-[25px] text-[14px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                         Eius iste repudiandae tempore aliquam perferendis ex aut nulla, 
-                         aperiam est suscipit sunt deserunt, 
-                        et autem, vitae sapiente magni unde. Atque, officia?
-                    </p>
-                    <div class="icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in hover:scale-110 transition-transform duration-300 text-[22px] text-white me-[10px]"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram text-[22px] hover:scale-110 transition-transform duration-300 text-[22px] text-white me-[10px]"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f text-[22px] hover:scale-110 transition-transform duration-300 text-[22px] text-white me-[10px]"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube text-[22px] hover:scale-110 transition-transform duration-300 text-[22px] text-white me-[10px]"></i></a>
-                    </div>
-                </div>
+    <div class="py-[20px] w-full">
+      <div class="container mx-auto">
+        <div
+          class="bg-[url(./photo-1568142402902-1298fe147da9.avif)] grid grid-cols-2 w-full bg-cover bg-center relative min-h-[700px] rounded-[20px] overflow-hidden"
+        >
+          <div
+            class="content text-white h-full flex flex-col justify-center gap-[100px] lg:px-[80px] px-[30px]"
+          >
+            <div class="logo">
+              <h2 class="text-[40px] flex items-center gap-[15px]">
+                <i class="fa-solid fa-fire"></i>
+                <span class="font-semibold">Codehal</span>
+              </h2>
             </div>
-            <div class="input-field overflow-hidden w-[40%] h-[100%] absolute right-0 top-0">
-                <div class="login absolute flex justify-center items-center flex-col h-full w-full text-white backdrop-blur-md rounded-r-[5px]">
-                    <form action="">
-                        <h2 class="text-center text-[40px] font-bold mb-[30px]">Sign In</h2>
-                        <div class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2">
-                            <span class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"><i class="fa-solid fa-envelope"></i></span>
-                            <input class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none" type="email" required>
-                            <label class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none">Email</label>
-                        </div>
-                        <div class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2">
-                            <span class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"><i class="fa-solid fa-lock"></i></span>
-                            <input class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none" type="password" required>
-                            <label class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none">Password</label>
-                        </div>
-                        <div class="remember flex items-center justify-between mb-[15px]">
-                            <label for="check"><input class="accent-[#c9113c] mr-1" id="check" type="checkbox" name="" id="">Remember me</label>
-                            <a href="#" class="hover:underline">Forgot Password?</a>
-                        </div>
-                        <button class="btn w-full mb-[25px] bg-[#c9113c] rounded-[3px] py-[10px] font-semibold text-[20px] hover:bg-[#c9113c9e] transition-all duration-300">Sign In</button>
-                        <div class="login-register text-center">
-                            <p>Dont have an acount? <a href="#" class="register-link font-semibold hover:underline">Sign Up</a></p>
-                        </div>
-                    </form>
-                </div>
-                <div class="register absolute flex justify-center items-center flex-col h-full w-full text-white backdrop-blur-md rounded-r-[5px]">
-                    <form action="">
-                        <h2 class="text-center text-[40px] font-bold mb-[30px]">Sign Up</h2>
-                        <div class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2">
-                            <span class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"><i class="fa-regular fa-user"></i></span>
-                            <input class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none" type="text" required>
-                            <label class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none">Name</label>
-                        </div>
-                        <div class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2">
-                            <span class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"><i class="fa-solid fa-envelope"></i></span>
-                            <input class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none" type="email" required>
-                            <label class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none">Email</label>
-                        </div>
-                        <div class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2">
-                            <span class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"><i class="fa-solid fa-lock"></i></span>
-                            <input class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none" type="password" required>
-                            <label class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none">Password</label>
-                        </div>
-                        <div class="remember flex items-center justify-between mb-[15px]">
-                            <label for="agree"><input class="accent-[#c9113c] mr-1" id="agree" type="checkbox" name="" id="">I agree to the terms & conditions</label>
-                        </div>
-                        <button class="btn w-full mb-[25px] bg-[#c9113c] rounded-[3px] py-[10px] font-semibold text-[20px] hover:bg-[#c9113c9e] transition-all duration-300">Sign up</button>
-                        <div class="login-register text-center">
-                            <p>Already have an acount? <a href="#" class="login-link font-semibold hover:underline">Sign in</a></p>
-                        </div>
-                    </form>
-                </div>
+            <div class="text">
+              <h1 class="text-[35px] m-0 font-bold">Welcome!</h1>
+              <span class="text-[20px] block font-semibold">To Our New Website.</span>
+              <p class="my-[15px] text-[14px] leading-[30px] max-w-[700px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+                iste repudiandae tempore aliquam perferendis ex aut nulla,
+                aperiam est suscipit sunt deserunt, et autem, vitae sapiente
+                magni unde. Atque, officia?
+              </p>
+              <ul class="flex items-center gap-1">
+                <li>
+                  <a
+                    href="#"
+                    class="group relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden rounded-[5px] transition ease-in-out before:absolute before:right-0 before:top-0 before:h-full before:w-full before:translate-y-[100%] before:bg-white before:transition before:duration-300 before:ease-in-out before:content-[''] hover:before:translate-y-0"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin-in relative z-10 transition-colors duration-300 group-hover:text-black"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="group relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden rounded-[5px] transition ease-in-out before:absolute before:right-0 before:top-0 before:h-full before:w-full before:translate-y-[100%] before:bg-white before:transition before:duration-300 before:ease-in-out before:content-[''] hover:before:translate-y-0"
+                    ><i
+                      class="fa-brands fa-instagram relative z-10 transition-colors duration-300 group-hover:text-black"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="group relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden rounded-[5px] transition ease-in-out before:absolute before:right-0 before:top-0 before:h-full before:w-full before:translate-y-[100%] before:bg-white before:transition before:duration-300 before:ease-in-out before:content-[''] hover:before:translate-y-0"
+                    ><i
+                      class="fa-brands fa-facebook-f relative z-10 transition-colors duration-300 group-hover:text-black"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="group relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden rounded-[5px] transition ease-in-out before:absolute before:right-0 before:top-0 before:h-full before:w-full before:translate-y-[100%] before:bg-white before:transition before:duration-300 before:ease-in-out before:content-[''] hover:before:translate-y-0"
+                    ><i
+                      class="fa-brands fa-youtube relative z-10 transition-colors duration-300 group-hover:text-black"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="input-field relative overflow-hidden backdrop-blur-md">
+            <div
+              class="login-field absolute left-0 top-0 transition duration-700 ease-in-out flex justify-center items-center flex-col h-full w-full text-white"
+            >
+              <form action="">
+                <h2 class="text-center text-[40px] font-bold mb-[30px]">
+                  Sign In
+                </h2>
+                <div
+                  class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2"
+                >
+                  <span
+                    class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <input
+                    class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none"
+                    type="email"
+                    required
+                  />
+                  <label
+                    class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none"
+                    >Email</label
+                  >
+                </div>
+                <div
+                  class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2"
+                >
+                  <span
+                    class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"
+                    ><i class="fa-solid fa-lock"></i
+                  ></span>
+                  <input
+                    class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none"
+                    type="password"
+                    required
+                  />
+                  <label
+                    class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none"
+                    >Password</label
+                  >
+                </div>
+                <div
+                  class="remember flex items-center justify-between mb-[15px]"
+                >
+                  <label for="check"
+                    ><input
+                      class="accent-[#c9113c] mr-1"
+                      id="check"
+                      type="checkbox"
+                      name=""
+                      id=""
+                    />Remember me</label
+                  >
+                  <a href="#" class="hover:underline">Forgot Password?</a>
+                </div>
+                <button
+                  class="btn w-full mb-[25px] bg-[#c9113c] rounded-[3px] py-[10px] font-semibold text-[20px] hover:bg-[#c9113c9e] transition-all duration-300"
+                >
+                  Sign In
+                </button>
+                <div class="login-register text-center">
+                  <p>
+                    Dont have an acount?
+                    <a
+                      href="#"
+                      class="register-link font-semibold hover:underline"
+                      >Sign Up</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+            <div
+              class="register-field absolute left-0 top-0 translate-x-full opacity-0 transition duration-700 ease-in-out flex justify-center items-center flex-col h-full w-full text-white"
+            >
+              <form action="">
+                <h2 class="text-center text-[40px] font-bold mb-[30px]">
+                  Sign Up
+                </h2>
+                <div
+                  class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2"
+                >
+                  <span
+                    class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"
+                    ><i class="fa-regular fa-user"></i
+                  ></span>
+                  <input
+                    class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none"
+                    type="text"
+                    required
+                  />
+                  <label
+                    class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none"
+                    >Name</label
+                  >
+                </div>
+                <div
+                  class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2"
+                >
+                  <span
+                    class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <input
+                    class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none"
+                    type="email"
+                    required
+                  />
+                  <label
+                    class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none"
+                    >Email</label
+                  >
+                </div>
+                <div
+                  class="input-box w-[340px] h-[50px] my-[35px] border-b-2 relative px-2"
+                >
+                  <span
+                    class="icon absolute right-[10px] top-1/2 translate-y-[-50%]"
+                    ><i class="fa-solid fa-lock"></i
+                  ></span>
+                  <input
+                    class="peer w-[100%] h-[100%] bg-transparent ring-0 outline-none"
+                    type="password"
+                    required
+                  />
+                  <label
+                    class="peer-focus:-top-[5px] peer-valid:-top-[5px] transition-all duration-500 absolute left-0 top-1/2 translate-y-[-50%] pointer-events-none"
+                    >Password</label
+                  >
+                </div>
+                <div
+                  class="remember flex items-center justify-between mb-[15px]"
+                >
+                  <label for="agree"
+                    ><input
+                      class="accent-[#c9113c] mr-1"
+                      id="agree"
+                      type="checkbox"
+                      name=""
+                      id=""
+                    />I agree to the terms & conditions</label
+                  >
+                </div>
+                <button
+                  class="btn w-full mb-[25px] bg-[#c9113c] rounded-[3px] py-[10px] font-semibold text-[20px] hover:bg-[#c9113c9e] transition-all duration-300"
+                >
+                  Sign up
+                </button>
+                <div class="login-register text-center">
+                  <p>
+                    Already have an acount?
+                    <a href="#" class="login-link font-semibold hover:underline"
+                      >Sign in</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="text-center py-4 w-full">
+      <p class="m-0 text-white">Create By Sh3wZa</p>
     </div>
 
     <!-- Script JQ -->

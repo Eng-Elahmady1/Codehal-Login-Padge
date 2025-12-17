@@ -13,16 +13,20 @@
 
 
 // Jquery Code 
-let inputField = $(".input-field");
+let loginField = $(".login-field");
+let registerField = $(".register-field");
+
 let loginLink = $(".login-link");
 let registerLink = $(".register-link");
 
 
 $(document).ready(function(){
     registerLink.on("click",function(){
-        inputField.addClass("active");
+        loginField.addClass("-translate-x-full opacity-0");
+        registerField.removeClass("translate-x-full opacity-0");
     });
     loginLink.on("click",function(){{
-        inputField.removeClass("active");
+        registerField.addClass("translate-x-full opacity-0");
+        loginField.removeClass("-translate-x-full opacity-0");
     }});
 });
